@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+About Us
+{% endblock title %}
+
+{% block body %} 
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <h1 class="display-4">About Us</h1>
+      <p class="lead text-muted">We are passionate about bringing delicious pasta to your table.</p>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <img src="/static/img/4.jpg" class="img-fluid rounded" alt="Pasta">
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <p class="text-justify">
+        At Pasta House, we believe that great food brings people together. Our journey began with a simple idea – to create mouthwatering pasta dishes using the freshest ingredients. Today, we are proud to serve a variety of pasta recipes that reflect both tradition and innovation.
+      </p>
+    </div>
+  </div>
+
+  <div class="text-center mt-5">
+    <a href="{% url 'home' %}" class="btn btn-primary">Back to Home</a>
+  </div>
+</div>
+{% endblock body %}
